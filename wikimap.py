@@ -36,9 +36,6 @@ class Shortly(object):
 # VIEWS
 #####
     def on_home_page(self, request):
-        return self.render_template("home_page.html")
-    
-    def on_map_view(self, request): # TODO FINISH FIXING THIS
         error = None
         page = ''
         if request.method == "POST":
@@ -46,9 +43,11 @@ class Shortly(object):
             if not is_valid_page(page):
                 error = "Please enter the name of a valid page on Wikipedia"
             else:
-                
-                return redirect("/%s+" % short_id)
+                return redirect("/map_view")
         return self.render_template("home_page.html", error=error) 
+    
+    def on_map_view(self, request): # TODO FINISH FIXING THIS
+        return self.render_template("map_view.html") 
 #####
 # END VIEWS
 #####
