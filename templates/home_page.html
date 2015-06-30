@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+<form action="" method="POST">
+  {% if error %}
+  <p class=error><strong>Error:</strong> {{ error }}
+    {% endif %}
+  <p>Wikipedia Article:
+    <input type="text" name="page" class=urlinput>
+    <input type="submit" value="Map">
+{% endblock %}
