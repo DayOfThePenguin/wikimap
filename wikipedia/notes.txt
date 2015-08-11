@@ -1,4 +1,4 @@
-https://en.wikipedia.org/w/api.php?action=query&titles=Quantum%20mechanics&prop=links&format=json&formatversion=2&continue=
+https://en.wikipedia.org/w/api.php?action=query&titles=Quantum%20mechanics&prop=links&pllimit=10&format=jsonfm&formatversion=2&continue=
 
 Preferred format for submitting a query
 
