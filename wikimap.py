@@ -1,4 +1,6 @@
 # Step 8
+import logging
+
 import os
 import urlparse
 from werkzeug.wrappers import Request, Response
@@ -11,6 +13,7 @@ from jinja2 import Environment, FileSystemLoader
 class Shortly(object):
 
     def __init__(self):
+        logging.basicConfig(filename='wikimap.py.log', level=logging.DEBUG)
         template_path = os.path.join(os.path.dirname(__file__),
                                      "templates")
         self.jinja_env = Environment(loader=FileSystemLoader(template_path),
@@ -40,6 +43,7 @@ class Shortly(object):
         page = ''
         if request.method == "POST":
             page = request.form["page"]
+            logging.debug(page)
             if not is_valid_page(page):
                 error = "Please enter the name of a valid page on Wikipedia"
             else:
