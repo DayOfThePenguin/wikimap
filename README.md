@@ -6,6 +6,7 @@
 
 ### Install [Virtualenv](https://virtualenv.pypa.io/en/latest/), create a new environment, and activate it
 1. The `.gitignore` file for this repository assumes that you call your virtual environment `env`.  You can change this behavior by editing the `.gitignore` file and adding the name you chose for your environment.
+
 > Because we don't want to have all the binary files from the virtual environment in our git repository
 
 ### Use pip to install Wikilinkmap's dependencies
@@ -14,4 +15,4 @@
 
 ### Run the 'wikimap.py' script in the root directory of this repository
 
-`python wikimap.py`
+     python wikimap.py
