@@ -11,3 +11,6 @@
 3. Use pip to install Wikilinkmap's dependencies
 > 3.1. 'pip install flask' [Flask](http://flask.pocoo.org/) is the library we use for web back-end things that are hard to do by hand
 > 3.2. 'pip install python-igraph' [Igraph](http://igraph.org/python/) is the library we use to do graph operations that would be really hard to do with lists or other standard Python objects
+
+4. Run the 'wikimap.py' script in the root directory of this repository
+> 'python wikimap.py'
