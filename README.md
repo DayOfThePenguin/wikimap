@@ -13,4 +13,4 @@
 > 3.2. 'pip install python-igraph' [Igraph](http://igraph.org/python/) is the library we use to do graph operations that would be really hard to do with lists or other standard Python objects
 
 4. Run the 'wikimap.py' script in the root directory of this repository
-> 'python wikimap.py'
+'python wikimap.py'
