@@ -29,6 +29,7 @@
           <ul>
                <li><code>pip install flask</code> : <a href="http://flask.pocoo.org/">Flask</a> is the library we use for web back-end things that are hard to do by hand</li>
                <li><code>pip install python-igraph</code> : <a href="http://igraph.org/python/">Igraph</a> is the library we use to do graph operations that would be really hard to do with lists or other standard Python objects</li>
+               <li><code>pip install pycapnp</code> : <a href="http://jparyani.github.io/pycapnp/index.html">Pycapnp</a>, a Python implementation of <a href="https://capnproto.org/index.html">Cap’n Proto</a> serialization data interchange format, which we use for data wrangling.</li>
      </li>
 </ol>
 
