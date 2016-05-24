@@ -1,0 +1,67 @@
+From https://en.wikipedia.org/w/api.php?action=query&titles=quantum mechanics&prop=links:
+
+Visualize the structure of the data by pasting it here : http://jsonviewer.stack.hu/ and selecting the visualizer tab
+
+{
+    "continue": {
+        "plcontinue": "25202|0|Albert_Einstein",
+        "continue": "||"
+    },
+    "query": {
+        "normalized": [
+            {
+                "from": "quantum mechanics",
+                "to": "Quantum mechanics"
+            }
+        ],
+        "pages": {
+            "25202": {
+                "pageid": 25202,
+                "ns": 0,
+                "title": "Quantum mechanics",
+                "links": [
+                    {
+                        "ns": 0,
+                        "title": "Abdus Salam"
+                    },
+                    {
+                        "ns": 0,
+                        "title": "Absolute zero"
+                    },
+                    {
+                        "ns": 0,
+                        "title": "Accelerator physics"
+                    },
+                    {
+                        "ns": 0,
+                        "title": "Acoustics"
+                    },
+                    {
+                        "ns": 0,
+                        "title": "Action (physics)"
+                    },
+                    {
+                        "ns": 0,
+                        "title": "Action at a distance"
+                    },
+                    {
+                        "ns": 0,
+                        "title": "Action principle"
+                    },
+                    {
+                        "ns": 0,
+                        "title": "Addison-Wesley"
+                    },
+                    {
+                        "ns": 0,
+                        "title": "Afshar experiment"
+                    },
+                    {
+                        "ns": 0,
+                        "title": "Agrophysics"
+                    }
+                ]
+            }
+        }
+    }
+}
