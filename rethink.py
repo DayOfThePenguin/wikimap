@@ -2,6 +2,9 @@ import logging
 
 import os
 import urlparse
+
+import wikipedia
+
 from flask import Flask
 from flask import request
 from flask import render_template
@@ -13,6 +16,9 @@ def homepage():
     if request.method == "GET":
         return(render_template("index.html"))
     if request.method == "POST":
-        return("<p>Hello, you requested this page with the HTTP POST method.</p>" +
-        "<p>You indicated you are interested in learning about: %s</p>" %
-        request.form["idea"])
+        return(render_template(
+                "search_results.html",
+                query = request.form['idea'],
+                results = wikipedia.search(request.form['idea'])
+            )
+        )
