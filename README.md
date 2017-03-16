@@ -11,8 +11,8 @@
 
 ### Use pip to install ReThink's dependencies
 * `pip install flask` [Flask](http://flask.pocoo.org/) is the library we use for web back-end things that are hard to do by hand
-* `pip install python-igraph` [Igraph](http://igraph.org/python/) is the library we use to do graph operations that would be really hard to do with lists or other standard Python objects
-* 'pip install wikipedia' [Wikipedia](https://pypi.python.org/pypi/wikipedia)
+* `pip install python-igraph` [Igraph-python](http://igraph.org/python/) is the library we use to do graph operations that would be really hard to do with lists or other standard Python objects. ** NOTE: The igraph python package relies on lower-level C/C++ libraries that you have to install before installing the python package through pip. Check the [Igraph](http://igraph.org/)  website for information about how to install the igraph C library **
+* `pip install wikipedia` [Wikipedia](https://pypi.python.org/pypi/wikipedia)
 is the library we use to make requests for data from wikipedia
 
 ### Source the file that sets up the environment variables needed to run the app properly
