@@ -1,6 +1,6 @@
 # ReThink
 
-## Setup steps:
+## First-time setup steps:
 
 ### Clone this repository
 
@@ -15,7 +15,7 @@
           > Because we don't want to have all the binary files from the virtual environment in our git repository
 
 * `source env/bin/activate` or `source env/bin/activate.csh`
-    > Depending on whether you run bash or c shell 
+    > Depending on whether you run bash or c shell
 
 ### Use pip to install ReThink's dependencies
 * `pip install flask` [Flask](http://flask.pocoo.org/) is the library we use for web back-end things that are hard to do by hand
@@ -23,7 +23,7 @@
 * `pip install wikipedia` [Wikipedia](https://pypi.python.org/pypi/wikipedia)
 is the library we use to make requests for data from wikipedia
 
-### Set up the
+### Set up the environment variable that flask needs to run a testing server
 * If you use C shell:
     `source setup.csh`
 * If you're normal and use bash:
@@ -31,4 +31,16 @@ is the library we use to make requests for data from wikipedia
 
 ### Run the app on a local testing server
 
-     flask run
+         flask run
+
+## Subsequent setups (if you've already done the first-time setup)
+
+### Set up the environment variable that flask needs to run a testing server
+* If you use C shell:
+    `source setup.csh`
+* If you're normal and use bash:
+    `source setup`
+
+### Run the app on a local testing server
+
+         flask run
