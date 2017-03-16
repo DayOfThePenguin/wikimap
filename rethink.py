@@ -19,6 +19,6 @@ def homepage():
         return(render_template(
                 "search_results.html",
                 query = request.form['idea'],
-                results = wikipedia.search(request.form['idea'])
+                results = wikipedia.search(request.form['idea'], results=5)
             )
         )
