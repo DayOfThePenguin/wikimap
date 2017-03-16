@@ -10,6 +10,7 @@ from flask import request
 from flask import render_template
 
 app = Flask(__name__)
+app.config['DEBUG'] = False
 
 @app.route("/", methods=["POST", "GET"])
 def homepage():
@@ -22,3 +23,5 @@ def homepage():
                 results = wikipedia.search(request.form['idea'], results=5)
             )
         )
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=80)
