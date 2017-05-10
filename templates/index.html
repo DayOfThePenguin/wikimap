@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<form action="/" method="post">
+  <label>What do you want to know about?
+    <input type="text" name="idea" placeholder="I'm curious about..." />
+  </label>
+</form>
+{% endblock %}
